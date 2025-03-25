@@ -1,0 +1,4 @@
+START /B /WAIT cmd /c ""C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\vsixinstaller.exe" /appidinstallpath:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe" /skuName:Community /skuVersion:15.0.28307.2094 /appidname:"Microsoft Visual Studio Community 2017"  /culture:"zh-CN"  /noep /u:"44630d46-96b5-488c-8df926e21db8c1a3" /quiet"
+START /B /WAIT cmd /c "D:\tools\VAXRegClear\Trial-Reset.exe"
+START /B /WAIT cmd /c ""C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\VSIXInstaller.exe"  /quiet "D:\tools\va2443\VA_X_Setup2443_0\.rsrc\BINARY\131.vsix""
+pause
