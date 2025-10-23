@@ -25,13 +25,12 @@ echo 正在处理目录: "%search_dir%"
 echo 替换规则: "%old_str%" -> "%new_str%"
 
 for /r "%search_dir%" %%f in (*) do (
-    set "filename=%%~nf"
-    set "ext=%%~xf"
-    set "newfilename=!filename:%old_str%=%new_str%!"
+    set "fullname=%%~nxf"
+    set "newfullname=!fullname:%old_str%=%new_str%!"
     
-    if not "!filename!"=="!newfilename!" (
-        echo 正在重命名: "%%~nxf" → "!newfilename!!ext!"
-        ren "%%f" "!newfilename!!ext!"
+    if not "!fullname!"=="!newfullname!" (
+        echo 正在重命名: "%%~nxf" → "!newfullname!"
+        ren "%%f" "!newfullname!"
     )
 )
 
