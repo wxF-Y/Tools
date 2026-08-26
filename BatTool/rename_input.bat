@@ -22,7 +22,7 @@ if not exist "%search_dir%\" (
 )
 
 echo 正在处理目录: "%search_dir%"
-echo 替换规则: "%old_str%" -> "%new_str%"
+echo 替换规则: "%old_str%" -^> "%new_str%"
 
 for /r "%search_dir%" %%f in (*) do (
     set "fullname=%%~nxf"
